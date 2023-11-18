@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 saved_variables.cfg
 adxl_results/belts/*.csv
 adxl_results/vibrations/*.tar.gz
+=======
+ saved_variables.cfg
+ adxl_results/belts/*.csv
+ adxl_results/vibrations/*.tar.gz
+>>>>>>> ff8cd627adcfe14b1d64ad213ee4060ee3ec4027
