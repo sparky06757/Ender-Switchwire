@@ -27,8 +27,6 @@ moonraker_folder=~/moonraker
 ### Path to your Mainsail folder, by default that is '~/mainsail'
 mainsail_folder=~/mainsail
 
-<<<<<<< HEAD
-=======
 ### Path to your Fluidd folder, by default that is '~/fluidd'
 #fluidd_folder=~/fluidd
 
@@ -36,7 +34,6 @@ mainsail_folder=~/mainsail
 ### By default that is 'main'
 branch=main
 
->>>>>>> ff8cd627adcfe14b1d64ad213ee4060ee3ec4027
 #####################################################################
 #####################################################################
 
@@ -76,19 +73,11 @@ grab_version(){
 
 push_config(){
   cd $config_folder
-<<<<<<< HEAD
-  git pull origin master
-  git add .
-  current_date=$(date +"%Y-%m-%d %T")
-  git commit -m "Autocommit from $current_date" -m "$m1" -m "$m2" -m "$m3" -m "$m4"
-  git push origin master
-=======
   git pull origin $branch --no-rebase
   git add .
   current_date=$(date +"%Y-%m-%d %T")
   git commit -m "Autocommit from $current_date" -m "$m1" -m "$m2" -m "$m3" -m "$m4"
   git push origin $branch
->>>>>>> ff8cd627adcfe14b1d64ad213ee4060ee3ec4027
 }
 
 grab_version
